@@ -1,4 +1,4 @@
-resource "helm_release" "wordpress" {
+resource "helm_release" "this" {
   name   = var.name
   namespace = var.namespace
   chart  = var.chart
