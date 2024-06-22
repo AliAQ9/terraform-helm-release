@@ -1,7 +1,7 @@
 # Usage
 
 ### Please add the following code 
-
+```
 module "app" {
   source    = "AliAQ9/release2/helm"
   namespace = "default"
@@ -10,3 +10,4 @@ module "app" {
   chart     = "./application"
   values = []
 }
+```
