@@ -1,8 +1,4 @@
-# Usage
-
-### Please add the following code 
-```
-module "app" {
+module "wordpress" {
   source    = "AliAQ9/release/helm"
   namespace = "default"
   name      = "wordpress"
@@ -10,4 +6,10 @@ module "app" {
   chart     = "./application"
   values = []
 }
-```
+
+
+provider "helm" {
+  kubernetes {
+    config_path = "~/.kube/config"
+  }
+}
