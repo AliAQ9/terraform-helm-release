@@ -3,7 +3,7 @@ module "wordpress" {
   namespace = "default"
   name      = "wordpress"
   wait      = false
-  chart     = "./application"
+  chart     = "../application"
   values = []
 }
 
