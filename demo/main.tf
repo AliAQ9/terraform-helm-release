@@ -6,10 +6,3 @@ module "wordpress" {
   chart     = "../application"
   values = []
 }
-
-
-provider "helm" {
-  kubernetes {
-    config_path = "~/.kube/config"
-  }
-}
